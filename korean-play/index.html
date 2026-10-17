@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="ko">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#070708"><title>말놀이 — 매일 조금, 우리말과 놀다</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header><a class="brand" href="#">말놀이 ↗</a><span class="edition">우리말을 가지고 노는 가장 짧은 시간</span><nav><a href="#games">게임 모음</a><button id="record-open">나의 기록 ↗</button></nav></header>
+<main>
+<section class="masthead" aria-label="말놀이"><div class="issue"><span>THE KOREAN LANGUAGE PLAYGROUND</span><span>하루 5문제, 가벼운 국어 습관</span></div><h1>말놀이<span class="asterisk">✳</span></h1><div class="mast-foot"><span>아는 말도, 낯선 말도. 놀다 보면 내 말이 됩니다.</span><span>VOL. 001 — 매일의 우리말</span></div></section>
+<section class="hero"><div class="hero-top"><span>오늘의 도전 / DAILY PLAY</span><span>5문제 · 약 2분</span></div><div class="hero-content"><span class="eyebrow">헷갈리는 순간, 시작되는 재미.</span><h2>금세<span class="versus">/</span>금새</h2><p>방금 떠올린 그 말,<br>정말 맞는 표현일까요?</p><button class="inverse" id="daily">오늘의 도전 시작하기 <span>↗</span></button></div><div class="hero-bottom"><span>정답보다 중요한 건, 알아가는 즐거움.</span><span class="outline-mark" aria-hidden="true">가</span><span>01 / 04</span></div></section>
+<section class="games section" id="games"><div class="section-heading"><div><span class="eyebrow">CHOOSE YOUR PLAY</span><h2>어떤 말로 놀까요?</h2></div><span class="muted">취향대로 고르는 네 가지 국어 미니게임</span></div><div class="filters" aria-label="게임 분류"><button class="active" data-filter="all" aria-pressed="true">전체 04</button><button data-filter="writing" aria-pressed="false">바르게 쓰기</button><button data-filter="meaning" aria-pressed="false">뜻 알아보기</button></div><div id="game-grid" class="game-grid"></div></section>
+<section class="editorial section"><span class="eyebrow">A LITTLE PLAY, EVERY DAY</span><h2>말을 아끼는 마음은,<br>말과 노는 시간에서.</h2><div class="editorial-bottom"><p>시험을 위한 국어 말고, 나를 위한 우리말.<br>짧은 놀이 하나가 오늘의 문장을 조금 더 단단하게 만듭니다.</p><a href="#games" class="pill">한 판 더 놀기 ↗</a></div></section>
+<section class="record-strip section"><div><span class="eyebrow">YOUR SMALL STEPS</span><h2>작은 도전이 쌓이는 중.</h2></div><div class="stats"><div><strong id="home-rounds">0</strong><span>완료한 게임</span></div><div><strong id="home-correct">0</strong><span>맞힌 문제</span></div><div><strong id="home-best">—</strong><span>최고 점수</span></div></div></section>
+</main><footer><a class="brand" href="#">말놀이 ↗</a><span>매일 조금, 우리말과 놀다.</span><span>기록은 이 브라우저에만 저장됩니다.</span></footer>
+<dialog id="play-dialog" aria-labelledby="play-title"><div class="dialog-top"><span id="play-category"></span><button class="close" id="play-close" aria-label="게임 닫기">닫기 ×</button></div><div id="play-body"></div></dialog>
+<dialog id="record-dialog" aria-labelledby="record-title"><div class="dialog-top"><span>MY PLAY RECORD</span><button class="close" id="record-close" aria-label="기록 닫기">닫기 ×</button></div><h2 id="record-title">나의 말놀이 기록</h2><div id="record-body"></div><button id="reset-record">기록 초기화</button></dialog>
+<script src="questions.js"></script><script src="app.js"></script></body></html>
