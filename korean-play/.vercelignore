@@ -1,0 +1,12 @@
+node_modules
+.git
+.env*
+*.log
+supabase
+*.test.cjs
+test.cjs
+server.cjs
+README.md
+TEACHER_GUIDE.md
+SECURITY_REVIEW.md
+.test-state.json

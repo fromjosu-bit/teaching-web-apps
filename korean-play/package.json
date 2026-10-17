@@ -1,1 +1,16 @@
-{"name":"malnori-local","version":"1.0.0","private":true,"scripts":{"start":"node server.cjs","test":"node test.cjs"}}
+{
+  "name": "malnori-korean-play",
+  "version": "2.0.0",
+  "private": true,
+  "scripts": {
+    "start": "npm run build && node server.cjs",
+    "build": "node build.cjs",
+    "test": "node test.cjs && node --test account-model.test.cjs"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "2.118.0"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2"
+  }
+}

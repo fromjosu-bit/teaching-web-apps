@@ -1,0 +1,5 @@
+const {test}=require('node:test'),assert=require('node:assert/strict');
+const {accountEmail,validatePassword,validateRecord}=require('./account-model.cjs');
+test('normalize username without accepting email or unexpected characters',()=>{assert.equal(accountEmail(' Abc123 '),'abc123@students.malnori.invalid');for(const id of ['abc','한글아이디','ab@cd.com','<script>','abc_123','a'.repeat(21)])assert.throws(()=>accountEmail(id));});
+test('password length validation',()=>{assert.equal(validatePassword('testpass123'),'testpass123');for(const p of ['short','a'.repeat(129)])assert.throws(()=>validatePassword(p));});
+test('record whitelist and score boundaries',()=>{const r={id:'11111111-1111-4111-8111-111111111111',game_id:'spelling',correct_count:5,user_id:'forged',score:100};assert.deepEqual(validateRecord(r),{id:r.id,game_id:'spelling',correct_count:5});for(const value of [{correct_count:6},{correct_count:-1},{correct_count:1.5},{game_id:'unknown'}])assert.throws(()=>validateRecord({...r,...value}));});

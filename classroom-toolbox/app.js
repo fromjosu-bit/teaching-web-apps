@@ -2,6 +2,15 @@ const app = document.querySelector('#app');
 
 const programs = [
   {
+    id: 'korean-play',
+    title: '말놀이 · 국어 미니게임',
+    description: '맞춤법, 띄어쓰기, 어휘, 속담을 풀고 학습 기록을 내 계정에 저장합니다.',
+    path: 'https://malnori-korean-play.vercel.app',
+    status: '아이디 로그인 · 학습 기록 저장',
+    visual: '말놀이',
+    external: true,
+  },
+  {
     id: 'diary',
     title: '하루의 조각 · 일기장',
     description: 'Google 로그인 후 나만의 일기를 안전하게 기록하고 기기 간 이어서 사용합니다.',

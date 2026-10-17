@@ -17,3 +17,5 @@
 - Firebase 일기장: https://haru-diary-fromjosu-20261017.web.app
 
 일기장 카드는 외부 Firebase 앱에 연결합니다. 일기장 소스와 기록은 이 공개 저장소에 포함하지 않습니다.
+
+국어 미니게임 말놀이: https://malnori-korean-play.vercel.app — 아이디 가입과 계정별 학습 기록 저장을 지원합니다.
