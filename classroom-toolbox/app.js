@@ -2,6 +2,15 @@ const app = document.querySelector('#app');
 
 const programs = [
   {
+    id: 'diary',
+    title: '하루의 조각 · 일기장',
+    description: 'Google 로그인 후 나만의 일기를 안전하게 기록하고 기기 간 이어서 사용합니다.',
+    path: 'https://haru-diary-fromjosu-20261017.web.app',
+    status: 'Google 로그인',
+    visual: '하루',
+    external: true,
+  },
+  {
     id: 'timer',
     title: '교실 타이머',
     description: '카운트다운, 스톱워치, 현재 시각을 한 화면에서 사용합니다.',
