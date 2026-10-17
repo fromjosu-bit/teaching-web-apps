@@ -1,0 +1,15 @@
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+node_modules/
+.openai/
+.vercel/
+diary-data/
+diary.json
+diary.backup.json
+*.tar.gz
+*.zip
+.DS_Store
